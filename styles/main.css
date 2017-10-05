@@ -1,0 +1,288 @@
+/*===== Global Style =====*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*===== Header Style =====*/
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 3;
+}
+
+.header-content {
+  max-width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-logo-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: -5px;
+  background-image: url(../images/logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 80%;
+
+}
+
+.header-menu {
+  margin-right: 30px;
+  font-size: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu-link {
+  color: black;
+  padding: 10px 15px 10px 15px;
+  border-radius: 1px;
+  border-bottom: 2px solid darkgrey
+}
+
+.header-menu-link:hover {
+  color: black;
+  background: darkgrey;
+}
+
+
+/*.header-link-home {
+  border-bottom: 2px solid darkgrey;
+}
+
+.header-link-home:hover {
+  color: black;
+  background: darkgrey;
+}
+
+.header-link-about {
+  border-bottom: 2px solid darkgrey;
+}
+
+.header-link-about:hover {
+  color: black;
+  background: darkgrey;
+}
+
+.header-link-video {
+  border-bottom: 2px solid darkgrey;
+}
+
+.header-link-video:hover {
+  color: black;
+  background: darkgrey;
+}*/
+
+/*===== Dropdown =====*/
+
+.dropsec {
+  background-color: #ffffff;
+  /*padding: 16px;*/
+  font-size: 20px;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: darkgrey;
+  color: black;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: inline-grid;
+}
+
+.dropdown:hover .dropsec {
+  background-color: darkgrey;
+}
+
+/*===== Social =====*/
+
+.header-social {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #999999;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-social-link:hover {
+  background-color: #333333;
+}
+
+.header-fa {
+  color: #ffffff;
+}
+
+.header-fa:hover {
+  color: black;
+}
+
+/*===== Main Style =====*/
+
+.main {
+  width: 100%;
+  z-index: 2;
+}
+
+.main-parallax {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+.main-content1 {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-content1-title {
+  color: #0000;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.main-content1-link {
+  color: #ffffff;
+  font-size: 24px;
+  background-color: #000000;
+  padding: 15px 50px 15px 50px;
+  border-radius: 5px;
+}
+
+.main-content1-link:hover {
+  background-color: grey;
+}
+
+.main-box{
+  width: 100%;
+  height: 350px;
+  padding-top: 210px;
+}
+
+.main-content2 {
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-content3 {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-link-sand {
+  width: 100%;
+  height: 80%;
+  /*margin-top: 30px;*/
+  padding: 70px;
+  display: run-in;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-link-fisheye{
+  width: 100%;
+  height: 80%;
+  /*margin-top: 30px;*/
+  padding: 220px;
+  display: run-in;
+  justify-content: center;
+  align-items: center;
+}
+
+/*===== Footer Style =====*/
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.footer-text {
+  color: #999999;
+}
+
+.footer-link {
+  color: #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
